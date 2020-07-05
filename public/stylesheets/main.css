@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+
+@import 'shared/variables.css';
+@import 'shared/header.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+.landing-books { 
+    width: 75%;
+}
+
+.landing-books h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.recently-added {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.recently-added a {
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 19%;
+    margin: 1rem 0 1rem 0;
+    transition: 1s all;
+}
+
+.recently-added a:hover {
+    flex: 1 1 20%;
+    height: 31vh;
+    margin: 0;
+}
+
+.recently-added img {
+    width: auto;
+    height: 80%;
+}
+
+.recently-added-title {
+    height: 20%;
+}
+
+.recently-added h6 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-top: 1px;
+}
+
+.recently-added h4 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.authors h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.landing-authors {
+    background-color: var(--accent-color);
+    width: 25%;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.landing-authors h2 {
+    font-size: 4rem;
+    color: var(--bg-color);
+    margin-bottom: 5rem;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.landing-authors div {
+    color: var(--bg-color);
+    margin: 2%;
+    font-size: 2rem;
+    -webkit-transition: 0.5s ease;
+}
+
+.landing-authors div:hover {
+    color: var(--main-color);
+    font-size: 2.2rem;
+}
+
+
+
+
+footer {
+    background-color: var(--main-color);
+    font-size: 1.5rem;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--bg-color);
+    position: fixed;
+}
+  
+
+
+@media (max-width: 1024px) {
+    .recently-added a {
+        flex: 0 0 33.333333%;
+        height: 25vh;
+    }
+
+    .recently-added a:last-child {
+        display: none;
+    }
+    
+    .recently-added img {
+        width: auto;
+        height: 80%;
+    }
+    
+    .recently-added-title {
+        height: 20%;
+    }
+    
+    .recently-added h6 {
+        font-size: 1rem;
+        color: var(--accent-color);
+        margin-top: 1px;
+    }
+    
+    .recently-added h4 {
+        font-size: 1.5rem;
+        color: var(--accent-color);
+        font-family: 'Montserrat Subrayada', sans-serif;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing-authors h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 460px) {
+    html {
+        font-size: 6px;
+    }
+
+    .landing-books { 
+        width: 100%;
+    }
+
+    .landing-authors {
+        display: none;
+    }
+
+    .recently-added-title {
+        text-align: center;
+    }
+    
+    .recently-added h6 {
+        font-size: 1.5rem;
+    }
+    
+    .recently-added h4 {
+        font-size: 2rem;
+    }
+    
+}
