@@ -3,6 +3,10 @@
 
 @import 'shared/variables.css';
 @import 'shared/header.css';
+@import 'shared/authors.css';
+@import 'shared/books.css';
+@import 'shared/new.css';
+@import 'shared/view.css';
 
 * {
     padding: 0;
@@ -24,6 +28,14 @@ body {
 
 a {
     text-decoration: none;
+}
+
+button {
+    cursor:pointer;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
 }
 
 .landing-page {
@@ -59,7 +71,7 @@ a {
     position: relative;
     flex: 1 1 19%;
     margin: 1rem 0 1rem 0;
-    transition: 1s all;
+    -webkit-transition: 1s ease;
 }
 
 .recently-added a:hover {
@@ -121,8 +133,7 @@ a {
 }
 
 
-
-
+/* Footer */
 footer {
     background-color: var(--main-color);
     font-size: 1.5rem;
@@ -180,6 +191,12 @@ footer {
         font-size: 6px;
     }
 
+    .landing-books h2 {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    
+
     .landing-books { 
         width: 100%;
     }
@@ -200,4 +217,10 @@ footer {
         font-size: 2rem;
     }
     
+}
+
+@media (max-width: 320px) {
+    .landing-books h2 {
+        margin-bottom: 0;
+    }
 }

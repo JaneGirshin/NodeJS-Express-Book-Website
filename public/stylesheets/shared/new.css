@@ -1,0 +1,111 @@
+.new-page {
+    padding-top: 12vh;
+    text-align: center;
+    height: 95vh;
+}
+
+.new-page h2 {
+    font-size: 2rem;
+    padding: 1px;
+}
+
+.align-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.new-upload {
+    padding: 2rem;
+    width: 30vh;
+    height: 40vh;
+    text-align: center;
+    margin: auto;
+}
+
+.new-page form {
+    position: relative;
+    padding: 0.5rem;
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.new-page input {
+    border: 2px solid var(--accent-color);
+    border-radius: 1rem;
+    padding: 1px 5px 1px 5px;
+    margin: 5px;
+}
+
+.new-page button {
+    padding: 2px 1rem 2px 1rem;
+    border: 2px solid var(--accent-color);
+    background: var(--accent-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    color: var(--bg-color);
+    transition: 0.8s all;
+    margin: 5px;
+}
+
+.new-page button:hover{
+    background: #6954a8;
+    border: 2px solid #6954a8;
+}
+
+.new-page a {
+    color: var(--main-color);
+    background: none;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.8s all;
+}
+
+.new-page a:hover {
+    color: #ff9a8e;
+}
+
+.new-page select {
+    padding: 0.5rem;
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 1rem;
+}
+
+.new-page textarea{
+    padding: 0.5rem;
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 1rem;
+}
+
+.new-page-submit {
+    position: relative;
+    bottom: -9vh;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 414px) {
+    .new-page h2 {
+        font-size: 3rem;
+    }
+
+    .align-row {
+        display: block;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .new-upload {
+        width: 25vh;
+        height: 35vh;
+    }
+}

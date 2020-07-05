@@ -1,0 +1,49 @@
+.books-page {
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.books-page-title h2 {
+    font-size: 3rem;
+}
+
+.books-page-title form {
+    padding: 0.5rem;
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.books-page-title input {
+    border: 2px solid var(--accent-color);
+    border-radius: 1rem;
+    padding: 1px 5px 1px 5px;
+    margin: 2px;
+}
+
+.books-page-title button {
+    padding: 2px 1rem 2px 1rem;
+    border: 2px solid var(--accent-color);
+    background: var(--accent-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    color: var(--bg-color);
+    -webkit-transition: 0.8s ease;
+    margin: 5px;
+}
+
+.books-page-title button:hover{
+    background: #6954a8;
+    border: 2px solid #6954a8;
+}
+
+.books-container img {
+    height: 10rem;
+    width: auto;
+    -webkit-transition: 0.5s ease;
+}
+
+.books-container img:hover {
+    height: 10.5rem;
+}

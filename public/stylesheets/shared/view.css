@@ -1,0 +1,64 @@
+.view-page h2 {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.title-books-by {
+    font-size: 3rem !important;
+    margin-bottom: 2rem;
+}
+
+.view-author img {
+    height: 10rem;
+    width: auto;
+    -webkit-transition: 0.5s ease;
+}
+
+.view-author img:hover {
+    height: 10.5rem;
+}
+
+.view-button button {
+    background: none;
+    border: none;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px;
+    padding: 0;
+}
+
+.view-button button:hover {
+    background: none;
+    border: none;
+    color: #ff9a8e;
+}
+
+.view-button a {
+    background-color: var(--accent-color);
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+}
+
+.view-button a:hover {
+    background-color: #6954a8;
+    color: var(--bg-color);
+}
+
+.view-author-from-book a {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.view-author-from-book a:hover {
+    color: #6954a8;
+}
+
+.view-book-info {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    font-size: 1.8rem;
+}

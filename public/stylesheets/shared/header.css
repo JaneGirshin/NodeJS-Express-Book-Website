@@ -19,24 +19,24 @@ nav {
     font-family: 'Montserrat Subrayada', sans-serif;
 }
 
-nav ul {
+.header-nav ul {
     margin-right: 5rem;
     order: 2;
 }
 
-nav ul li {
+.header-nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
 }
 
-nav ul li a {
+.header-nav ul li a {
     color: var(--bg-color);
     font-size: 1.5rem;
     text-transform: uppercase;
     -webkit-transition: 1s ease;
 }
 
-a:hover {
+.header-nav a:hover {
     color: var(--accent-color);
 }
 
@@ -58,7 +58,7 @@ a:hover {
         display: block;
     }
 
-    ul{
+    .header-nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -72,16 +72,16 @@ a:hover {
         z-index: 2;
     }
 
-    nav ul li {
+    .header-nav ul li {
         display: block;
         padding: 2rem;
     }
 
-    nav ul li a {
+    .header-nav ul li a {
         font-size: 3rem;
     }
 
-    nav ul li a:hover {
+    .header-nav ul li a:hover {
         color: var(--bg-color);
     }
 
