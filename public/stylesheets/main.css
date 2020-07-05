@@ -43,7 +43,7 @@ input:focus, select:focus, textarea:focus {
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
-  }
+}
 
 .landing-page {
     display: flex;
